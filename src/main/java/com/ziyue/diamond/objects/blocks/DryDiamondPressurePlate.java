@@ -1,8 +1,8 @@
 package com.ziyue.diamond.objects.blocks;
 
 /*
-    ¸É×êÊ¯Ñ¹Á¦°åÊôÓÚÄ¾ÖÊÑ¹Á¦°å£¬ÒâÎ¶×ÅËü¿ÉÒÔ±»µôÂäÎï¼¤»î
-    Èç¹ûÄãÏëÒª½«¸É×êÊ¯Ñ¹Á¦°å¸ÄÎª²âÖØÑ¹Á¦°å£¨ÎÞ·¨±»µôÂäÎï¼¤»î£©£¬ÄãÐèÒª½«ÏÂÃæµÄSensitivity.EVERYTHING¸ÄÎªSensitivity.MOBS
+    å¹²é’»çŸ³åŽ‹åŠ›æ¿å±žäºŽæœ¨è´¨åŽ‹åŠ›æ¿ï¼Œæ„å‘³ç€å®ƒå¯ä»¥è¢«æŽ‰è½ç‰©æ¿€æ´»
+    å¦‚æžœä½ æƒ³è¦å°†å¹²é’»çŸ³åŽ‹åŠ›æ¿æ”¹ä¸ºæµ‹é‡åŽ‹åŠ›æ¿ï¼ˆæ— æ³•è¢«æŽ‰è½ç‰©æ¿€æ´»ï¼‰ï¼Œä½ éœ€è¦å°†ä¸‹é¢çš„Sensitivity.EVERYTHINGæ”¹ä¸ºSensitivity.MOBS
 */
 
 import net.minecraft.block.PressurePlateBlock;

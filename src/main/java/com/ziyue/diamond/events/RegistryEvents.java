@@ -36,145 +36,145 @@ public class RegistryEvents {
     public static final String MOD_ID = Main.MOD_ID;
 
     /*
-        ¸É×êÊ¯Ñ¹Á¦°åÊµÖÊÉÏÊôÓÚÄ¾ÖÊÑ¹Á¦°å£¬¿ÉÒÔ±»µôÂäÎï¼¤»î
-        ×êÊ¯Ñ¹Á¦°åÊµÖÊÉÏÊôÓÚÊ¯ÖÊÑ¹Á¦°å£¬²»ÄÜ±»µôÂäÎï¼¤»î
+        å¹²é’»çŸ³å‹åŠ›æ¿å®è´¨ä¸Šå±äºæœ¨è´¨å‹åŠ›æ¿ï¼Œå¯ä»¥è¢«æ‰è½ç‰©æ¿€æ´»
+        é’»çŸ³å‹åŠ›æ¿å®è´¨ä¸Šå±äºçŸ³è´¨å‹åŠ›æ¿ï¼Œä¸èƒ½è¢«æ‰è½ç‰©æ¿€æ´»
 
-        ¸É×êÊ¯°´Å¥ÊµÖÊÉÏÊôÓÚÄ¾ÖÊ°´Å¥£¬¿ÉÒÔ±»¼ı¼¤»î
-        ×êÊ¯°´Å¥ÊµÖÊÉÏÊôÓÚÊ¯ÖÊ°´Å¥£¬²»ÄÜ±»¼ı¼¤»î
+        å¹²é’»çŸ³æŒ‰é’®å®è´¨ä¸Šå±äºæœ¨è´¨æŒ‰é’®ï¼Œå¯ä»¥è¢«ç®­æ¿€æ´»
+        é’»çŸ³æŒ‰é’®å®è´¨ä¸Šå±äºçŸ³è´¨æŒ‰é’®ï¼Œä¸èƒ½è¢«ç®­æ¿€æ´»
     */
 
     @SubscribeEvent
-    public static void registerItems(final RegistryEvent.Register<Item> event)//ÎïÆ·ĞèÒªÔÚItemList.javaÖĞ×¢²á
+    public static void registerItems(final RegistryEvent.Register<Item> event)//ç‰©å“éœ€è¦åœ¨ItemList.javaä¸­æ³¨å†Œ
     {
-        event.getRegistry().registerAll//×¢²áÎïÆ·£¬¿É·ÖÅä´´ÔìÀ¸
+        event.getRegistry().registerAll//æ³¨å†Œç‰©å“ï¼Œå¯åˆ†é…åˆ›é€ æ 
                 (
-                        //¸É×êÊ¯
+                        //å¹²é’»çŸ³
                         ItemList.dry_diamond = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("dry_diamond")),
-                        //¸É×êÊ¯¿é
+                        //å¹²é’»çŸ³å—
                         ItemList.dry_diamond_block = new BlockItem(BlockList.dry_diamond_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.dry_diamond_block.getRegistryName()),
-                        //¸É×êÊ¯Ì¨½×
+                        //å¹²é’»çŸ³å°é˜¶
                         ItemList.dry_diamond_slab = new BlockItem(BlockList.dry_diamond_slab, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.dry_diamond_slab.getRegistryName()),
-                        //¸É×êÊ¯Â¥Ìİ
+                        //å¹²é’»çŸ³æ¥¼æ¢¯
                         ItemList.dry_diamond_stairs = new BlockItem(BlockList.dry_diamond_stairs, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.dry_diamond_stairs.getRegistryName()),
-                        //¸É×êÊ¯¹÷
+                        //å¹²é’»çŸ³æ£
                         ItemList.dry_diamond_stick = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("dry_diamond_stick")),
-                        //¸É×êÊ¯°´Å¥
+                        //å¹²é’»çŸ³æŒ‰é’®
                         ItemList.dry_diamond_button = new BlockItem(BlockList.dry_diamond_button, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.dry_diamond_button.getRegistryName()),
-                        //¸É×êÊ¯Õ¤À¸
+                        //å¹²é’»çŸ³æ …æ 
                         ItemList.dry_diamond_fence = new BlockItem(BlockList.dry_diamond_fence, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.dry_diamond_fence.getRegistryName()),
-                        //¸É×êÊ¯Ñ¹Á¦°å
+                        //å¹²é’»çŸ³å‹åŠ›æ¿
                         ItemList.dry_diamond_pressure_plate = new BlockItem(BlockList.dry_diamond_pressure_plate, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.dry_diamond_pressure_plate.getRegistryName()),
-                        //¸É×êÊ¯¿ó
+                        //å¹²é’»çŸ³çŸ¿
                         ItemList.dry_diamond_ore = new BlockItem(BlockList.dry_diamond_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.dry_diamond_ore.getRegistryName()),
-                        //¸É×êÊ¯Ç½
+                        //å¹²é’»çŸ³å¢™
                         ItemList.dry_diamond_wall = new BlockItem(BlockList.dry_diamond_wall, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.dry_diamond_wall.getRegistryName()),
-                        //¸É×êÊ¯ÃÅ
+                        //å¹²é’»çŸ³é—¨
                         ItemList.dry_diamond_door = new BlockItem(BlockList.dry_diamond_door, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.dry_diamond_door.getRegistryName()),
-                        //¸É×êÊ¯Õ¤À¸ÃÅ
+                        //å¹²é’»çŸ³æ …æ é—¨
                         ItemList.dry_diamond_fence_gate = new BlockItem(BlockList.dry_diamond_fence_gate, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.dry_diamond_fence_gate.getRegistryName()),
-                        //¸É×êÊ¯Ìİ×Ó
+                        //å¹²é’»çŸ³æ¢¯å­
                         ItemList.dry_diamond_ladder = new BlockItem(BlockList.dry_diamond_ladder, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.dry_diamond_ladder.getRegistryName()),
-                        //×êÊ¯Â¥Ìİ
+                        //é’»çŸ³æ¥¼æ¢¯
                         ItemList.diamond_stairs = new BlockItem(BlockList.diamond_stairs, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_stairs.getRegistryName()),
-                        //×êÊ¯Ì¨½×
+                        //é’»çŸ³å°é˜¶
                         ItemList.diamond_slab = new BlockItem(BlockList.diamond_slab, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_slab.getRegistryName()),
-                        //×êÊ¯Ç½
+                        //é’»çŸ³å¢™
                         ItemList.diamond_wall = new BlockItem(BlockList.diamond_wall, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.diamond_wall.getRegistryName()),
-                        //×êÊ¯¹÷
+                        //é’»çŸ³æ£
                         ItemList.diamond_stick = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("diamond_stick")),
-                        //×êÊ¯Õ¤À¸
+                        //é’»çŸ³æ …æ 
                         ItemList.diamond_fence = new BlockItem(BlockList.diamond_fence, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.diamond_fence.getRegistryName()),
-                        //×êÊ¯°´Å¥
+                        //é’»çŸ³æŒ‰é’®
                         ItemList.diamond_button = new BlockItem(BlockList.diamond_button, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.diamond_button.getRegistryName()),
-                        //×êÊ¯Ñ¹Á¦°å
+                        //é’»çŸ³å‹åŠ›æ¿
                         ItemList.diamond_pressure_plate = new BlockItem(BlockList.diamond_pressure_plate, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.diamond_pressure_plate.getRegistryName()),
-                        //×êÊ¯ÃÅ
+                        //é’»çŸ³é—¨
                         ItemList.diamond_door = new BlockItem(BlockList.diamond_door, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.diamond_door.getRegistryName()),
-                        //×êÊ¯Ìİ×Ó
+                        //é’»çŸ³æ¢¯å­
                         ItemList.diamond_ladder = new BlockItem(BlockList.diamond_ladder, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.diamond_ladder.getRegistryName()),
-                        //×êÊ¯Õ¤À¸ÃÅ
+                        //é’»çŸ³æ …æ é—¨
                         ItemList.diamond_fence_gate = new BlockItem(BlockList.diamond_fence_gate, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.diamond_fence_gate.getRegistryName()),
-                        //Ô­°æ×êÊ¯¿é
+                        //åŸç‰ˆé’»çŸ³å—
                         ItemList.diamond_block_vanila = new BlockItem(BlockList.diamond_block_vanila, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_block_vanila.getRegistryName()),
-                        //Ô­°æ×êÊ¯¿ó
+                        //åŸç‰ˆé’»çŸ³çŸ¿
                         ItemList.diamond_ore_vanila = new BlockItem(BlockList.diamond_ore_vanila, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_ore_vanila.getRegistryName()),
 
-                        /*×°±¸*/
-                        //¸É×êÊ¯Í·¿ø
+                        /*è£…å¤‡*/
+                        //å¹²é’»çŸ³å¤´ç›”
                         ItemList.dry_diamond_helmet = new ArmorItem(DryDiamondMaterial.MATERIAL, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("dry_diamond_helmet"),
-                        //¸É×êÊ¯ĞØ¼×
+                        //å¹²é’»çŸ³èƒ¸ç”²
                         ItemList.dry_diamond_chestplate = new ArmorItem(DryDiamondMaterial.MATERIAL, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("dry_diamond_chestplate"),
-                        //¸É×êÊ¯»¤ÍÈ
+                        //å¹²é’»çŸ³æŠ¤è…¿
                         ItemList.dry_diamond_leggings = new ArmorItem(DryDiamondMaterial.MATERIAL, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("dry_diamond_leggings"),
-                        //¸É×êÊ¯Ñ¥×Ó
+                        //å¹²é’»çŸ³é´å­
                         ItemList.dry_diamond_boots = new ArmorItem(DryDiamondMaterial.MATERIAL, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("dry_diamond_boots")
                 );
     }
 
     @SubscribeEvent
-    public static void registerBlocks(final RegistryEvent.Register<Block> event)//·½¿éĞèÒªÔÚItemList.java¼°BlockList.java×¢²á
+    public static void registerBlocks(final RegistryEvent.Register<Block> event)//æ–¹å—éœ€è¦åœ¨ItemList.javaåŠBlockList.javaæ³¨å†Œ
     {
-        event.getRegistry().registerAll//×¢²á·½¿é
+        event.getRegistry().registerAll//æ³¨å†Œæ–¹å—
                 (
-                        //¸É×êÊ¯¿é
+                        //å¹²é’»çŸ³å—
                         BlockList.dry_diamond_block = new Block(Block.Properties.create(Material.IRON, MaterialColor.DIAMOND).hardnessAndResistance(3.0F, 4.0F).sound(SoundType.METAL)).setRegistryName(location("dry_diamond_block")),
-                        //¸É×êÊ¯Ì¨½×
+                        //å¹²é’»çŸ³å°é˜¶
                         BlockList.dry_diamond_slab = new SlabBlock(Block.Properties.from(BlockList.dry_diamond_block)).setRegistryName(location("dry_diamond_slab")),
-                        //¸É×êÊ¯Â¥Ìİ
+                        //å¹²é’»çŸ³æ¥¼æ¢¯
                         BlockList.dry_diamond_stairs = new DryDiamondStairs(BlockList.dry_diamond_block.getDefaultState(), Block.Properties.from(BlockList.dry_diamond_block)).setRegistryName("dry_diamond_stairs"),
-                        //¸É×êÊ¯Õ¤À¸
+                        //å¹²é’»çŸ³æ …æ 
                         BlockList.dry_diamond_fence = new FenceBlock(Block.Properties.from(BlockList.dry_diamond_block)).setRegistryName(location("dry_diamond_fence")),
-                        //¸É×êÊ¯°´Å¥
+                        //å¹²é’»çŸ³æŒ‰é’®
                         BlockList.dry_diamond_button = new DryDiamondButton(Block.Properties.create(Material.IRON, MaterialColor.DIAMOND)).setRegistryName(location("dry_diamond_button")),
-                        //¸É×êÊ¯Ñ¹Á¦°å
+                        //å¹²é’»çŸ³å‹åŠ›æ¿
                         BlockList.dry_diamond_pressure_plate = new DryDiamondPressurePlate(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.create(Material.IRON, MaterialColor.DIAMOND)).setRegistryName(location("dry_diamond_pressure_plate")),
-                        //¸É×êÊ¯Ç½
+                        //å¹²é’»çŸ³å¢™
                         BlockList.dry_diamond_wall = new WallBlock(Block.Properties.from(BlockList.dry_diamond_block)).setRegistryName(location("dry_diamond_wall")),
-                        //¸É×êÊ¯¿ó
+                        //å¹²é’»çŸ³çŸ¿
                         BlockList.dry_diamond_ore = new DryDiamondOre(Block.Properties.from(Blocks.IRON_ORE)).setRegistryName(location("dry_diamond_ore")),
-                        //¸É×êÊ¯ÃÅ
+                        //å¹²é’»çŸ³é—¨
                         BlockList.dry_diamond_door = new DryDiamondDoor(Block.Properties.from(Blocks.OAK_DOOR)).setRegistryName(location("dry_diamond_door")),
-                        //¸É×êÊ¯Õ¤À¸ÃÅ
+                        //å¹²é’»çŸ³æ …æ é—¨
                         BlockList.dry_diamond_fence_gate = new FenceGateBlock(Block.Properties.from(BlockList.dry_diamond_block)).setRegistryName(location("dry_diamond_fence_gate")),
-                        //¸É×êÊ¯Ìİ×Ó
+                        //å¹²é’»çŸ³æ¢¯å­
                         BlockList.dry_diamond_ladder = new DryDiamondLadder(Block.Properties.from(Blocks.LADDER)).setRegistryName("dry_diamond_ladder"),
-                        //×êÊ¯Â¥Ìİ
+                        //é’»çŸ³æ¥¼æ¢¯
                         BlockList.diamond_stairs = new DiamondStairs(Blocks.DIAMOND_BLOCK.getDefaultState(), Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("diamond_stairs"),
-                        //×êÊ¯Ì¨½×
+                        //é’»çŸ³å°é˜¶
                         BlockList.diamond_slab = new SlabBlock(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName(location("diamond_slab")),
-                        //×êÊ¯Ç½
+                        //é’»çŸ³å¢™
                         BlockList.diamond_wall = new WallBlock(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName(location("diamond_wall")),
-                        //×êÊ¯Õ¤À¸
+                        //é’»çŸ³æ …æ 
                         BlockList.diamond_fence = new FenceBlock(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName(location("diamond_fence")),
-                        //×êÊ¯°´Å¥
+                        //é’»çŸ³æŒ‰é’®
                         BlockList.diamond_button = new DryDiamondButton(Block.Properties.create(Material.IRON, MaterialColor.DIAMOND).lightValue(14)).setRegistryName(location("diamond_button")),
-                        //×êÊ¯Ñ¹Á¦°å
+                        //é’»çŸ³å‹åŠ›æ¿
                         BlockList.diamond_pressure_plate = new DryDiamondPressurePlate(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.create(Material.IRON, MaterialColor.DIAMOND).lightValue(14)).setRegistryName(location("diamond_pressure_plate")),
-                        //×êÊ¯ÃÅ
+                        //é’»çŸ³é—¨
                         BlockList.diamond_door = new DiamondDoor(Block.Properties.from(Blocks.IRON_DOOR).lightValue(14)).setRegistryName(location("diamond_door")),
-                        //×êÊ¯Õ¤À¸ÃÅ
+                        //é’»çŸ³æ …æ é—¨
                         BlockList.diamond_fence_gate = new FenceGateBlock(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("diamond_fence_gate"),
-                        //×êÊ¯Ìİ×Ó
+                        //é’»çŸ³æ¢¯å­
                         BlockList.diamond_ladder = new DiamondLadder(Block.Properties.from(Blocks.LADDER).lightValue(14)).setRegistryName("diamond_ladder"),
-                        //Ô­°æ×êÊ¯¿é
+                        //åŸç‰ˆé’»çŸ³å—
                         BlockList.diamond_block_vanila = new Block(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("minecraft:diamond_block"),
-                        //Ô­°æ×êÊ¯¿ó
+                        //åŸç‰ˆé’»çŸ³çŸ¿
                         BlockList.diamond_ore_vanila = new Block(Block.Properties.from(Blocks.DIAMOND_ORE).lightValue(5)).setRegistryName("minecraft:diamond_ore")
                 );
     }
 /*
-  Ô­°æ×êÊ¯¿é£º
+  åŸç‰ˆé’»çŸ³å—ï¼š
   Block.Properties.from(Blocks.DIAMOND_BLOCK)
-  ¼ÓÔØÓÎÏ·Ô­°æ×êÊ¯¿éÊı¾İ£¬ÓÉÓÚÄ£×éÔÚÔ­°æÓÎÏ·Ö®ºó¼ÓÔØ£¬ËùÒÔÎªÏÈµ÷ÓÃÔ­°æÊı¾İºóÌí¼ÓlightValueÔÙ¸²¸Ç£¨¿É¼òµ¥Àí½âÎªĞŞ¸ÄÔ­°æÄÚÈİ£©
+  åŠ è½½æ¸¸æˆåŸç‰ˆé’»çŸ³å—æ•°æ®ï¼Œç”±äºæ¨¡ç»„åœ¨åŸç‰ˆæ¸¸æˆä¹‹ååŠ è½½ï¼Œæ‰€ä»¥ä¸ºå…ˆè°ƒç”¨åŸç‰ˆæ•°æ®åæ·»åŠ lightValueå†è¦†ç›–ï¼ˆå¯ç®€å•ç†è§£ä¸ºä¿®æ”¹åŸç‰ˆå†…å®¹ï¼‰
 
   lightValue(14)
-  Ìí¼ÓÁÁ¶ÈÖµÎª14£¬Óë»ğ°ÑÒ»ÖÂ
+  æ·»åŠ äº®åº¦å€¼ä¸º14ï¼Œä¸ç«æŠŠä¸€è‡´
 
   setRegistryName("minecraft:diamond_block")
-  ÉèÖÃ×¢²áÃû³Æ£¬ÌØ±ğÖ¸Ã÷minecraftÃüÃû¿Õ¼ä£¬¸²¸ÇÔ­°æminecraft¿Õ¼ä·½¿é ×êÊ¯¿é£¨ÀíÂÛÉÏÒ²¿ÉÒÔÖ±½Ó¸²¸ÇÆäËûÄ£×é·½¿é£¬Ö¸¶¨ÃüÃû¿Õ¼ä¼´¿É£©
+  è®¾ç½®æ³¨å†Œåç§°ï¼Œç‰¹åˆ«æŒ‡æ˜minecraftå‘½åç©ºé—´ï¼Œè¦†ç›–åŸç‰ˆminecraftç©ºé—´æ–¹å— é’»çŸ³å—ï¼ˆç†è®ºä¸Šä¹Ÿå¯ä»¥ç›´æ¥è¦†ç›–å…¶ä»–æ¨¡ç»„æ–¹å—ï¼ŒæŒ‡å®šå‘½åç©ºé—´å³å¯ï¼‰
 
-  ÔÚÆäËû·½¿éÉÏÒ²´óÖÂÏàÍ¬£¬ÔÚÊôĞÔºó¼ÓÉÏ.lightValue()¼´¿É
-  Àı£ºBlock.Properties.from(Blocks.IRON_BLOCK).lightValue(14)
+  åœ¨å…¶ä»–æ–¹å—ä¸Šä¹Ÿå¤§è‡´ç›¸åŒï¼Œåœ¨å±æ€§ååŠ ä¸Š.lightValue()å³å¯
+  ä¾‹ï¼šBlock.Properties.from(Blocks.IRON_BLOCK).lightValue(14)
 */
 
     public static ResourceLocation location(String name) {
@@ -190,8 +190,8 @@ public class RegistryEvents {
         BiomeList.registerBiomes();
     }
 
-    //¸É×êÊ¯×°±¸ Êı¾İ
-    //2.1°æ±¾¿ªÊ¼£¬¸É×êÊ¯×°±¸½«Ê¹ÓÃËøÁ´Êı¾İ£¬ÒÔÏÂÄÚÈİ»ùÓÚËøÁ´Êı¾İ
+    //å¹²é’»çŸ³è£…å¤‡ æ•°æ®
+    //2.1ç‰ˆæœ¬å¼€å§‹ï¼Œå¹²é’»çŸ³è£…å¤‡å°†ä½¿ç”¨é”é“¾æ•°æ®ï¼Œä»¥ä¸‹å†…å®¹åŸºäºé”é“¾æ•°æ®
     public enum DryDiamondMaterial implements IArmorMaterial {
         MATERIAL(Main.MOD_ID + ":dry_diamond_armor", 5, new int[] {1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 6.9F, () -> {
             return Ingredient.fromItems(ItemList.dry_diamond);
