@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"xx"
+	],
+	"key": {
+		"x": {
+			"item": "diamond:dry_diamond"
+		}
+	},
+	"result": {
+		"item": "diamond:dry_diamond_pressure_plate"
+	}
+}

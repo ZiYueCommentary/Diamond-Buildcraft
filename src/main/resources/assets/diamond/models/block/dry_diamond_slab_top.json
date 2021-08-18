@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "diamond:block/dry_diamond_block",
+    "top": "diamond:block/dry_diamond_block",
+    "side": "diamond:block/dry_diamond_block"
+  }
+}

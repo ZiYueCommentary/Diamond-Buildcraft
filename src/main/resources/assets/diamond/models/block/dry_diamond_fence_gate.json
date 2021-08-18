@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "diamond:block/dry_diamond_block"
+  }
+}

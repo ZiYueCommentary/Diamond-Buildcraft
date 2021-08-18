@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "diamond:block/dry_diamond_slab" },
+    "type=top": { "model": "diamond:block/dry_diamond_slab_top" },
+    "type=double": { "model": "diamond:block/dry_diamond_block" }
+  }
+}

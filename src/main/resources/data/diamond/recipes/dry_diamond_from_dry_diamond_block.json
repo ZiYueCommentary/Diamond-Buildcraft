@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "diamond:dry_diamond_block"
+		}
+	],
+	"result": {
+		"item": "diamond:dry_diamond",
+		"count": 9
+	}
+}

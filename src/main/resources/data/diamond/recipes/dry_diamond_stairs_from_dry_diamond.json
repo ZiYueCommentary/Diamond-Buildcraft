@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"x  ",
+		"xx ",
+		"xxx"
+	],
+	"key": {
+		"x": {
+			"item": "diamond:dry_diamond"
+		}
+	},
+	"result": {
+		"item": "diamond:dry_diamond_stairs",
+		"count": 3
+	}
+}

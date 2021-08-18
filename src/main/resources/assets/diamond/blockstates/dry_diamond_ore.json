@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "diamond:block/dry_diamond_ore" }
+  }
+}

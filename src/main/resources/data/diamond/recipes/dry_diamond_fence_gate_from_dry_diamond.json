@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"xyx",
+		"xyx"
+	],
+	"key": {
+		"x": {
+			"item": "diamond:dry_diamond_stick"
+		},
+		"y": {
+			"item": "diamond:dry_diamond"
+		}
+	},
+	"result": {
+		"item": "diamond:dry_diamond_fence_gate",
+		"count": 1
+	}
+}

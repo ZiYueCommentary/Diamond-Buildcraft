@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "minecraft:diamond"
+	},
+	"result": "diamond:dry_diamond",
+	"experience": 0.7,
+	"cookingtime": 200
+}

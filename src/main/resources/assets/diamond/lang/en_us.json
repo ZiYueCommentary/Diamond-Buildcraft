@@ -1,0 +1,33 @@
+{
+  "item.diamond.dry_diamond": "Dry Diamond",
+  "block.diamond.dry_diamond_block": "Dry Diamond Block",
+  "block.diamond.dry_diamond_slab": "Dry Diamond Slab",
+  "block.diamond.dry_diamond_stairs": "Dry Diamond Stairs",
+  "block.diamond.dry_diamond_wall": "Dry Diamond Wall",
+  "item.diamond.dry_diamond_stick": "Dry Diamond Stick",
+  "block.diamond.dry_diamond_fence": "Dry Diamond Fence",
+  "block.diamond.dry_diamond_pressure_plate": "Dry Diamond Pressure Plate",
+  "block.diamond.dry_diamond_button": "Dry Diamond Button",
+  "block.diamond.dry_diamond_ore": "Dry Diamond Ore",
+  "block.diamond.dry_diamond_door": "Dry Diamond Door",
+  "block.diamond.dry_diamond_fence_gate": "Dry Diamond Fence Gate",
+  "block.diamond.dry_diamond_ladder": "Dry Diamond Ladder",
+
+  "block.diamond.diamond_stairs": "Diamond Stairs",
+  "block.diamond.diamond_slab": "Diamond Slab",
+  "block.diamond.diamond_wall": "Diamond Wall",
+  "item.diamond.diamond_stick": "Diamond Stick",
+  "block.diamond.diamond_fence": "Diamond Fence",
+  "block.diamond.diamond_pressure_plate": "Diamond Pressure Plate",
+  "block.diamond.diamond_button": "Diamond Button",
+  "block.diamond.diamond_door": "Diamond Door",
+  "block.diamond.diamond_fence_gate": "Diamond Fence Gate",
+  "block.diamond.diamond_ladder": "Diamond Ladder",
+
+  "generator.diamond_land": "Diamond Land（in dev）",
+
+  "item.diamond.dry_diamond_helmet": "Dry Diamond Helmet",
+  "item.diamond.dry_diamond_chestplate": "Dry Diamond Chestplate",
+  "item.diamond.dry_diamond_leggings": "Dry Diamond Leggings",
+  "item.diamond.dry_diamond_boots": "Dry Diamond Boots"
+}

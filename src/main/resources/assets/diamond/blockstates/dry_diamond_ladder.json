@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "diamond:block/dry_diamond_ladder" },
+    "facing=east":  { "model": "diamond:block/dry_diamond_ladder", "y": 90 },
+    "facing=south": { "model": "diamond:block/dry_diamond_ladder", "y": 180 },
+    "facing=west":  { "model": "diamond:block/dry_diamond_ladder", "y": 270 }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "diamond:dry_diamond_fence",
+        "diamond:diamond_fence"
+    ]
+}

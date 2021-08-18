@@ -1,0 +1,33 @@
+{
+  "item.diamond.dry_diamond": "干钻石",
+  "block.diamond.dry_diamond_block": "干钻石块",
+  "block.diamond.dry_diamond_slab": "干钻石台阶",
+  "block.diamond.dry_diamond_stairs": "干钻石楼梯",
+  "block.diamond.dry_diamond_wall": "干钻石墙",
+  "item.diamond.dry_diamond_stick": "干钻石棍",
+  "block.diamond.dry_diamond_fence": "干钻石栅栏",
+  "block.diamond.dry_diamond_pressure_plate": "干钻石压力板",
+  "block.diamond.dry_diamond_button": "干钻石按钮",
+  "block.diamond.dry_diamond_ore": "干钻石矿",
+  "block.diamond.dry_diamond_door": "干钻石门",
+  "block.diamond.dry_diamond_fence_gate": "干钻石栅栏门",
+  "block.diamond.dry_diamond_ladder": "干钻石梯子",
+
+  "block.diamond.diamond_stairs": "钻石楼梯",
+  "block.diamond.diamond_slab": "钻石台阶",
+  "block.diamond.diamond_wall": "钻石墙",
+  "item.diamond.diamond_stick": "钻石棍",
+  "block.diamond.diamond_fence": "钻石栅栏",
+  "block.diamond.diamond_pressure_plate": "钻石压力板",
+  "block.diamond.diamond_button": "钻石按钮",
+  "block.diamond.diamond_door": "钻石门",
+  "block.diamond.diamond_fence_gate": "钻石栅栏门",
+  "block.diamond.diamond_ladder": "钻石梯子",
+
+  "generator.diamond_land": "钻石大陆（开发中）",
+
+  "item.diamond.dry_diamond_helmet": "干钻石头盔",
+  "item.diamond.dry_diamond_chestplate": "干钻石胸甲",
+  "item.diamond.dry_diamond_leggings": "干钻石护腿",
+  "item.diamond.dry_diamond_boots": "干钻石靴子"
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"xyx",
+		"xyx"
+	],
+	"key": {
+		"y": {
+			"item": "diamond:diamond_stick"
+		},
+		"x": {
+			"item": "minecraft:diamond"
+		}
+	},
+	"result": {
+		"item": "diamond:diamond_fence",
+		"count": 3
+	}
+}
