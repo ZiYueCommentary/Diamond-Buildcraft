@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"xxx",
+		"xxx",
+		"xxx"
+	],
+	"key": {
+		"x": {
+			"item": "diamond:dry_diamond_block"
+		}
+	},
+	"result": {
+		"item": "diamond:compress_dry_diamond_block"
+	}
+}

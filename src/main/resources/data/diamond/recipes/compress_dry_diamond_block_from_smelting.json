@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "diamond:compress_diamond_block"
+	},
+	"result": "diamond:compress_dry_diamond_block",
+	"experience": 0.7,
+	"cookingtime": 200
+}
