@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures":
+  {
+    "bottom": "diamond:blocks/dry_diamond_block",
+    "top": "diamond:blocks/dry_diamond_block",
+    "side": "diamond:blocks/dry_diamond_block"
+  }
+}

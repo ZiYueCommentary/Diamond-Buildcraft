@@ -1,0 +1,29 @@
+#Dry Diamond
+item.dry_diamond.name=Dry Diamond
+tile.dry_diamond_block.name=Dry Diamond Block
+tile.dry_diamond_slab_half.name=Dry Diamond Slab Half
+tile.dry_diamond_ore.name=Dry Diamond Ore
+tile.dry_diamond_stairs.name=Dry Diamond Stairs
+tile.dry_diamond_button.name=Dry Diamond Button
+tile.dry_diamond_fence.name=Dry Diamond Fence
+item.dry_diamond_stick.name=Dry Diamond Stick
+tile.dry_diamond_pressure_plate.name=Dry Diamond Pressure Plate
+tile.compress_dry_diamond_block.name=Compress Dry Diamond Block
+#Armor
+item.dry_diamond_helmet.name=Dry Diamond Helmet
+item.dry_diamond_chestplate.name=Dry Diamond Chestplate
+item.dry_diamond_leggings.name=Dry Diamond Leggings
+item.dry_diamond_boots.name=Dry Diamond Boots
+
+#Diamond
+tile.diamond_slab_half.name=Diamond Slab
+tile.diamond_stairs.name=Diamond Stairs
+tile.diamond_fence.name=Diamond Fence
+tile.diamond_button.name=Diamond Button
+tile.diamond_pressure_plate.name=Diamond Pressure Plate
+item.diamond_stick.name=Diamond Stick
+tile.compress_diamond_block.name=Compress Diamond Block
+
+#Vanila Block
+tile.minecraft:diamond_block.name=Diamond Block
+tile.minecraft:diamond_ore.name=Diamond Ore

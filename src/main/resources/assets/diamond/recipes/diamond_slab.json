@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "###"
+  ],
+
+  "key":
+  {
+    "#":
+    {
+      "item": "minecraft:diamond"
+    }
+  },
+
+  "result":
+  {
+    "item":  "diamond:diamond_slab_half",
+    "data": 0 ,
+    "count": 6
+  }
+}

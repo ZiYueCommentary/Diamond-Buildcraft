@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "xx"
+  ],
+
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:diamond"
+    }
+  },
+
+  "result":
+  {
+    "item":  "diamond:diamond_pressure_plate"
+  }
+}

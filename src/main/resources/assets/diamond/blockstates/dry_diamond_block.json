@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "diamond:dry_diamond_block" }
+  }
+}

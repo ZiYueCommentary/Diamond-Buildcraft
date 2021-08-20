@@ -1,0 +1,6 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "diamond:blocks/dry_diamond_block"
+  }
+}
