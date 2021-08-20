@@ -9,6 +9,7 @@ import com.ziyue.diamond.world.biome.DiamondLandBiome;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.command.arguments.ItemInput;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
@@ -74,6 +75,8 @@ public class RegistryEvents {
                         ItemList.dry_diamond_fence_gate = new BlockItem(BlockList.dry_diamond_fence_gate, new Item.Properties().group(ItemGroup.REDSTONE)).setRegistryName(BlockList.dry_diamond_fence_gate.getRegistryName()),
                         //干钻石梯子
                         ItemList.dry_diamond_ladder = new BlockItem(BlockList.dry_diamond_ladder, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.dry_diamond_ladder.getRegistryName()),
+                        //压缩干钻石块
+                        ItemList.compress_dry_diamond_block = new BlockItem(BlockList.compress_dry_diamond_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.compress_dry_diamond_block.getRegistryName()),
                         //钻石楼梯
                         ItemList.diamond_stairs = new BlockItem(BlockList.diamond_stairs, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_stairs.getRegistryName()),
                         //钻石台阶
@@ -98,6 +101,8 @@ public class RegistryEvents {
                         ItemList.diamond_block_vanila = new BlockItem(BlockList.diamond_block_vanila, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_block_vanila.getRegistryName()),
                         //原版钻石矿
                         ItemList.diamond_ore_vanila = new BlockItem(BlockList.diamond_ore_vanila, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_ore_vanila.getRegistryName()),
+                        //压缩钻石块
+                        ItemList.compress_diamond_block = new BlockItem(BlockList.compress_diamond_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.compress_diamond_block.getRegistryName()),
 
                         /*装备*/
                         //干钻石头盔
@@ -138,6 +143,8 @@ public class RegistryEvents {
                         BlockList.dry_diamond_fence_gate = new FenceGateBlock(Block.Properties.from(BlockList.dry_diamond_block)).setRegistryName(location("dry_diamond_fence_gate")),
                         //干钻石梯子
                         BlockList.dry_diamond_ladder = new DryDiamondLadder(Block.Properties.from(Blocks.LADDER)).setRegistryName("dry_diamond_ladder"),
+                        //压缩干钻石块
+                        BlockList.compress_dry_diamond_block = new Block(Block.Properties.from(Blocks.DIAMOND_BLOCK)).setRegistryName("compress_dry_diamond_block"),
                         //钻石楼梯
                         BlockList.diamond_stairs = new DiamondStairs(Blocks.DIAMOND_BLOCK.getDefaultState(), Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("diamond_stairs"),
                         //钻石台阶
@@ -156,6 +163,8 @@ public class RegistryEvents {
                         BlockList.diamond_fence_gate = new FenceGateBlock(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("diamond_fence_gate"),
                         //钻石梯子
                         BlockList.diamond_ladder = new DiamondLadder(Block.Properties.from(Blocks.LADDER).lightValue(14)).setRegistryName("diamond_ladder"),
+                        //压缩钻石块
+                        BlockList.compress_diamond_block = new Block(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("compress_diamond_block"),
                         //原版钻石块
                         BlockList.diamond_block_vanila = new Block(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("minecraft:diamond_block"),
                         //原版钻石矿

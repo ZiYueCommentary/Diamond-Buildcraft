@@ -12,6 +12,7 @@
   "block.diamond.dry_diamond_door": "干钻石门",
   "block.diamond.dry_diamond_fence_gate": "干钻石栅栏门",
   "block.diamond.dry_diamond_ladder": "干钻石梯子",
+  "block.diamond.compress_dry_diamond_block": "压缩干钻石块",
 
   "block.diamond.diamond_stairs": "钻石楼梯",
   "block.diamond.diamond_slab": "钻石台阶",
@@ -23,6 +24,7 @@
   "block.diamond.diamond_door": "钻石门",
   "block.diamond.diamond_fence_gate": "钻石栅栏门",
   "block.diamond.diamond_ladder": "钻石梯子",
+  "block.diamond.compress_diamond_block": "压缩钻石块",
 
   "generator.diamond_land": "钻石大陆（开发中）",
 

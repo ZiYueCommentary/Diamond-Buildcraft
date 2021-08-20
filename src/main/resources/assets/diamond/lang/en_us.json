@@ -12,6 +12,7 @@
   "block.diamond.dry_diamond_door": "Dry Diamond Door",
   "block.diamond.dry_diamond_fence_gate": "Dry Diamond Fence Gate",
   "block.diamond.dry_diamond_ladder": "Dry Diamond Ladder",
+  "block.diamond.compress_dry_diamond_block": "Compress Dry Diamond Block",
 
   "block.diamond.diamond_stairs": "Diamond Stairs",
   "block.diamond.diamond_slab": "Diamond Slab",
@@ -23,8 +24,9 @@
   "block.diamond.diamond_door": "Diamond Door",
   "block.diamond.diamond_fence_gate": "Diamond Fence Gate",
   "block.diamond.diamond_ladder": "Diamond Ladder",
+  "block.diamond.compress_diamond_block": "Compress Diamond Block",
 
-  "generator.diamond_land": "Diamond Land（in dev）",
+  "generator.diamond_land": "Diamond Land",
 
   "item.diamond.dry_diamond_helmet": "Dry Diamond Helmet",
   "item.diamond.dry_diamond_chestplate": "Dry Diamond Chestplate",
