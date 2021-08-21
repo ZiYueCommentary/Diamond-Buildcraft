@@ -23,6 +23,7 @@ tile.diamond_button.name=钻石按钮
 tile.diamond_pressure_plate.name=钻石压力板
 item.diamond_stick.name=钻石棍
 tile.compress_diamond_block.name=压缩钻石块
+tile.diamond_door.name=钻石门
 
 # 原版方块
 tile.minecraft:diamond_block.name=钻石块

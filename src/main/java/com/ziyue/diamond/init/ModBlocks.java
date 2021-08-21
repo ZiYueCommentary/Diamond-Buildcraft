@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ModBlocks {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
+
     public static final Block DRY_DIAMOND_ORE = new BlockBase("dry_diamond_ore", Material.ROCK).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     //原版钻石块
     public static final Block DIAMOND_BLOCK_VANILA = new DiamondBlock("minecraft:diamond_block", Material.IRON).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
@@ -53,6 +54,8 @@ public class ModBlocks {
     public static final Block COMPRESS_DIAMOND_BLOCK = new CompressDiamondBlock("compress_diamond_block", Material.IRON).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     //压缩干钻石块
     public static final Block COMPRESS_DRY_DIAMOND_BLOCK = new CompressDryDiamondBlock("compress_dry_diamond_block", Material.IRON).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+    //钻石门
+    public static final Block DIAMOND_DOOR = new DiamondDoor("diamond_door");
 }
 /*
     台阶由于有多重情况，所以在写配方时注明data

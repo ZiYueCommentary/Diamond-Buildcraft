@@ -24,19 +24,4 @@ public class DiamondOre extends BlockBase{
         setHarvestLevel("pickaxe", 2);
         setLightLevel(10);
     }
-    /*
-        下面是物品掉落
-        其中第一个是挖钻石矿掉落钻石
-        因为模组对钻石块进行了修改，所以需要特殊声明掉落物
-        需要一个返回值，这个返回值可以随便写，不会影响到其他方块
-    */
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
-    {
-        if (this == ModBlocks.DIAMOND_ORE_VANILA)
-        {
-            return Items.DIAMOND;
-        } else {
-            return this == Blocks.QUARTZ_ORE ? Items.QUARTZ : Item.getItemFromBlock(this);
-        }
-    }
 }

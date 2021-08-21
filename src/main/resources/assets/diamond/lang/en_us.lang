@@ -23,6 +23,7 @@ tile.diamond_button.name=Diamond Button
 tile.diamond_pressure_plate.name=Diamond Pressure Plate
 item.diamond_stick.name=Diamond Stick
 tile.compress_diamond_block.name=Compress Diamond Block
+tile.diamond_door.name=Diamond Door
 
 #Vanila Block
 tile.minecraft:diamond_block.name=Diamond Block
