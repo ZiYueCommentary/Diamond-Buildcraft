@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "bottom": "diamond:blocks/door_diamond_lower",
+    "top": "diamond:blocks/door_diamond_upper"
+  }
+}
