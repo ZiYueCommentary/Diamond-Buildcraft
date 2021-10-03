@@ -56,6 +56,8 @@ public class ModBlocks {
     public static final Block COMPRESS_DRY_DIAMOND_BLOCK = new CompressDryDiamondBlock("compress_dry_diamond_block", Material.IRON).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     //钻石门
     public static final Block DIAMOND_DOOR = new DiamondDoor("diamond_door");
+    //干钻石门
+    public static final Block DRY_DIAMOND_DOOR = new DryDiamondDoor("dry_diamond_door");
 }
 /*
     台阶由于有多重情况，所以在写配方时注明data

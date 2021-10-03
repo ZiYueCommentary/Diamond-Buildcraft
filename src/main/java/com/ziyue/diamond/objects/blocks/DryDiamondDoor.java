@@ -20,23 +20,23 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class DiamondDoor extends BlockDoor implements IHasModel {
+public class DryDiamondDoor extends BlockDoor implements IHasModel {
         protected static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.1875D);
         protected static final AxisAlignedBB NORTH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.8125D, 1.0D, 1.0D, 1.0D);
         protected static final AxisAlignedBB WEST_AABB = new AxisAlignedBB(0.8125D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
         protected static final AxisAlignedBB EAST_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.1875D, 1.0D, 1.0D);
 
-        public DiamondDoor(String name)
+        public DryDiamondDoor(String name)
         {
-            super(Material.IRON);
+            super(Material.WOOD);
             setUnlocalizedName(name);
             setRegistryName(name);
-            setHardness(5.0F);
-            setResistance(6.0F);
+            setHardness(4.0F);
+            setResistance(5.0F);
             setLightLevel(1);
             setCreativeTab(CreativeTabs.REDSTONE);
 
-            this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HINGE, BlockDoor.EnumHingePosition.LEFT).withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, BlockDoor.EnumDoorHalf.LOWER));
+            this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HINGE, EnumHingePosition.LEFT).withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, EnumDoorHalf.LOWER));
 
             ModBlocks.BLOCKS.add(this);
             ModItems.ITEMS.add(new ItemDoor(this).setRegistryName(this.getRegistryName()));
@@ -48,7 +48,7 @@ public class DiamondDoor extends BlockDoor implements IHasModel {
             state = state.getActualState(source, pos);
             EnumFacing enumfacing = (EnumFacing)state.getValue(FACING);
             boolean flag = !((Boolean)state.getValue(OPEN)).booleanValue();
-            boolean flag1 = state.getValue(HINGE) == BlockDoor.EnumHingePosition.RIGHT;
+            boolean flag1 = state.getValue(HINGE) == EnumHingePosition.RIGHT;
             switch(enumfacing)
             {
                 case EAST:

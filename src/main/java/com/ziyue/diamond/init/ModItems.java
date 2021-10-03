@@ -16,7 +16,7 @@ import java.util.List;
  * @author ZiYueCommentary
  */
 
-public class ModItems {
+public class ModItems extends Item {
     public static final List<Item> ITEMS = new ArrayList<Item>();
     //干钻石
     public static final Item DRY_DIAMOND = new ItemBase("dry_diamond").setCreativeTab(CreativeTabs.MISC);

@@ -9,6 +9,7 @@ tile.dry_diamond_fence.name=干钻石栅栏
 item.dry_diamond_stick.name=干钻石棍
 tile.dry_diamond_pressure_plate.name=干钻石压力板
 tile.compress_dry_diamond_block.name=压缩干钻石块
+tile.dry_diamond_door.name=干钻石门
 # 装备
 item.dry_diamond_helmet.name=干钻石头盔
 item.dry_diamond_chestplate.name=干钻石胸甲

@@ -9,6 +9,7 @@ tile.dry_diamond_fence.name=Dry Diamond Fence
 item.dry_diamond_stick.name=Dry Diamond Stick
 tile.dry_diamond_pressure_plate.name=Dry Diamond Pressure Plate
 tile.compress_dry_diamond_block.name=Compress Dry Diamond Block
+tile.dry_diamond_door.name=Dry Diamond Door
 #Armor
 item.dry_diamond_helmet.name=Dry Diamond Helmet
 item.dry_diamond_chestplate.name=Dry Diamond Chestplate
