@@ -7,6 +7,7 @@ import com.ziyue.diamond.init.ModBlocks;
 import com.ziyue.diamond.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
+import net.minecraft.block.BlockStoneSlab;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -14,6 +15,7 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IStringSerializable;
@@ -43,17 +45,16 @@ public abstract class BlockSlabBase extends BlockSlab implements IHasModel
         this.half = half;
         ModBlocks.BLOCKS.add(this);
     }
-
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    public int quantityDropped(Random random)
     {
-        return Item.getItemFromBlock(half);
+        return this.isDouble() ? 2 : 1;
     }
 
     @Override
-    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
+    public boolean isFullCube(IBlockState state)
     {
-        return new ItemStack(half);
+        return this.isDouble();
     }
 
     @Override

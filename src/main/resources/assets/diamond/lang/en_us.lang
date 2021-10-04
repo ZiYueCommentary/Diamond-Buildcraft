@@ -10,6 +10,8 @@ item.dry_diamond_stick.name=Dry Diamond Stick
 tile.dry_diamond_pressure_plate.name=Dry Diamond Pressure Plate
 tile.compress_dry_diamond_block.name=Compress Dry Diamond Block
 tile.dry_diamond_door.name=Dry Diamond Door
+tile.dry_diamond_ladder.name=Dry Diamond Ladder
+tile.dry_diamond_fence_gate.name=Dry Diamond Fence Gate
 #Armor
 item.dry_diamond_helmet.name=Dry Diamond Helmet
 item.dry_diamond_chestplate.name=Dry Diamond Chestplate
@@ -25,6 +27,8 @@ tile.diamond_pressure_plate.name=Diamond Pressure Plate
 item.diamond_stick.name=Diamond Stick
 tile.compress_diamond_block.name=Compress Diamond Block
 tile.diamond_door.name=Diamond Door
+tile.diamond_ladder.name=Diamond Ladder
+tile.diamond_fence_gate.name=Diamond Fence Gate
 
 #Vanila Block
 tile.minecraft:diamond_block.name=Diamond Block

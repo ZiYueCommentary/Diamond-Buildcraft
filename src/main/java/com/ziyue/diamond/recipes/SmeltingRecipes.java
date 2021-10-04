@@ -31,6 +31,9 @@ public class SmeltingRecipes {
         GameRegistry.addSmelting(new ItemStack(ModBlocks.DIAMOND_FENCE), new ItemStack(ModBlocks.DRY_DIAMOND_FENCE), 0.4F);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.DIAMOND_PRESSURE_PLATE), new ItemStack(ModBlocks.DRY_DIAMOND_PRESSURE_PLATE), 0.4F);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.COMPRESS_DIAMOND_BLOCK), new ItemStack(ModBlocks.COMPRESS_DRY_DIAMOND_BLOCK), 0.4F);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.DIAMOND_DOOR), new ItemStack(ModBlocks.DRY_DIAMOND_DOOR), 0.4F);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.DIAMOND_LADDER), new ItemStack(ModBlocks.DRY_DIAMOND_LADDER), 0.4F);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.DIAMOND_FENCE_GATE), new ItemStack(ModBlocks.DRY_DIAMOND_FENCE_GATE), 0.4F);
 
         /*装备*/
         GameRegistry.addSmelting(new ItemStack(Items.DIAMOND_HELMET), new ItemStack(ModItems.DRY_DIAMOND_HELMET), 0.4F);

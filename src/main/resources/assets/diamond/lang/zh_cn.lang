@@ -10,6 +10,8 @@ item.dry_diamond_stick.name=干钻石棍
 tile.dry_diamond_pressure_plate.name=干钻石压力板
 tile.compress_dry_diamond_block.name=压缩干钻石块
 tile.dry_diamond_door.name=干钻石门
+tile.dry_diamond_ladder.name=干钻石梯子
+tile.dry_diamond_fence_gate.name=干钻石栅栏门
 # 装备
 item.dry_diamond_helmet.name=干钻石头盔
 item.dry_diamond_chestplate.name=干钻石胸甲
@@ -25,6 +27,8 @@ tile.diamond_pressure_plate.name=钻石压力板
 item.diamond_stick.name=钻石棍
 tile.compress_diamond_block.name=压缩钻石块
 tile.diamond_door.name=钻石门
+tile.diamond_ladder.name=钻石梯子
+tile.diamond_fence_gate.name=钻石栅栏门
 
 # 原版方块
 tile.minecraft:diamond_block.name=钻石块

@@ -58,6 +58,14 @@ public class ModBlocks {
     public static final Block DIAMOND_DOOR = new DiamondDoor("diamond_door");
     //干钻石门
     public static final Block DRY_DIAMOND_DOOR = new DryDiamondDoor("dry_diamond_door");
+    //钻石梯子
+    public static final Block DIAMOND_LADDER = new DiamondLadder("diamond_ladder");
+    //干钻石梯子
+    public static final Block DRY_DIAMOND_LADDER = new DryDiamondLadder("dry_diamond_ladder");
+    //钻石栅栏门
+    public static final Block DIAMOND_FENCE_GATE = new DiamondFenceGate("diamond_fence_gate");
+    //干钻石栅栏门
+    public static final Block DRY_DIAMOND_FENCE_GATE = new DryDiamondFenceGate("dry_diamond_fence_gate");
 }
 /*
     台阶由于有多重情况，所以在写配方时注明data

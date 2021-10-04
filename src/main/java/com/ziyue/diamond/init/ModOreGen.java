@@ -13,16 +13,25 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 import java.util.Random;
 
 public class ModOreGen implements IWorldGenerator {
-    private WorldGenerator DryDiamondOre;
+    private WorldGenerator nether, overworld, end;
 
     public ModOreGen(){
-        DryDiamondOre = new WorldGenMinable(ModBlocks.DRY_DIAMOND_ORE.getDefaultState(), 14, BlockMatcher.forBlock(Blocks.NETHERRACK));
+        overworld = new WorldGenMinable(ModBlocks.DRY_DIAMOND_ORE.getDefaultState(), 9);
+        nether = new WorldGenMinable(ModBlocks.DRY_DIAMOND_ORE.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
+        end = new WorldGenMinable(ModBlocks.DRY_DIAMOND_ORE.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.END_STONE));
     }
 
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){
         switch (world.provider.getDimension()){
+            case 0:
+                runGenerator(overworld, world, random, chunkX, chunkZ, 50, 0, 50);
+                break;
             case -1:
-                runGenerator(DryDiamondOre, world, random, chunkX, chunkZ, 5, 10, 100);
+                runGenerator(nether, world, random, chunkX, chunkZ, 50, 0, 50);
+                break;
+            case 1:
+                runGenerator(end, world,random,chunkX,chunkZ,50,0,50);
+                break;
         }
     }
 

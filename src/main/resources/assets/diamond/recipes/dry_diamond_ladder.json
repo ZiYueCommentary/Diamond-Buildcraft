@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "x x",
+    "xxx",
+    "x x"
+  ],
+
+  "key":
+  {
+    "x":
+    {
+      "item": "diamond:dry_diamond_stick"
+    }
+  },
+
+  "result":
+  {
+    "item":  "diamond:dry_diamond_ladder"
+  }
+}
