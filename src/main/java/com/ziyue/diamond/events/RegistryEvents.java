@@ -100,7 +100,7 @@ public class RegistryEvents {
                         //原版钻石块
                         ItemList.diamond_block_vanila = new BlockItem(BlockList.diamond_block_vanila, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_block_vanila.getRegistryName()),
                         //原版钻石矿
-                        ItemList.diamond_ore_vanila = new BlockItem(BlockList.diamond_ore_vanila, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_ore_vanila.getRegistryName()),
+                        //ItemList.diamond_ore_vanila = new BlockItem(BlockList.diamond_ore_vanila, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_ore_vanila.getRegistryName()),
                         //压缩钻石块
                         ItemList.compress_diamond_block = new BlockItem(BlockList.compress_diamond_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.compress_diamond_block.getRegistryName()),
 
@@ -166,9 +166,9 @@ public class RegistryEvents {
                         //压缩钻石块
                         BlockList.compress_diamond_block = new Block(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("compress_diamond_block"),
                         //原版钻石块
-                        BlockList.diamond_block_vanila = new Block(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("minecraft:diamond_block"),
+                        BlockList.diamond_block_vanila = new Block(Block.Properties.from(Blocks.DIAMOND_BLOCK).lightValue(14)).setRegistryName("minecraft:diamond_block")
                         //原版钻石矿
-                        BlockList.diamond_ore_vanila = new Block(Block.Properties.from(Blocks.DIAMOND_ORE).lightValue(5)).setRegistryName("minecraft:diamond_ore")
+                        //BlockList.diamond_ore_vanila = new Block(Block.Properties.from(Blocks.DIAMOND_ORE).lightValue(5)).setRegistryName("minecraft:diamond_ore")
                 );
     }
 /*
