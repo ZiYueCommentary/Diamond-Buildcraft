@@ -13,5 +13,7 @@ public class ItemList {
             dry_diamond_helmet, dry_diamond_chestplate, dry_diamond_leggings, dry_diamond_boots,
 
             //原版方块
-            diamond_block_vanila, diamond_ore_vanila;
+            diamond_block_vanila, diamond_ore_vanila,
+            dry_diamond_sword;
+            //TODO: 干钻石块
 }

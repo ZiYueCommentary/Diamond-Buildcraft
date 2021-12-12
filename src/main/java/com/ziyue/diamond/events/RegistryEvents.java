@@ -4,12 +4,12 @@ import com.ziyue.diamond.Main;
 import com.ziyue.diamond.lists.BiomeList;
 import com.ziyue.diamond.lists.BlockList;
 import com.ziyue.diamond.lists.ItemList;
+import com.ziyue.diamond.lists.SwordMaterial;
 import com.ziyue.diamond.objects.blocks.*;
 import com.ziyue.diamond.world.biome.DiamondLandBiome;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraft.command.arguments.ItemInput;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
@@ -20,7 +20,6 @@ import net.minecraft.util.SoundEvents;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import org.apache.logging.log4j.Logger;
@@ -77,6 +76,8 @@ public class RegistryEvents {
                         ItemList.dry_diamond_ladder = new BlockItem(BlockList.dry_diamond_ladder, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockList.dry_diamond_ladder.getRegistryName()),
                         //压缩干钻石块
                         ItemList.compress_dry_diamond_block = new BlockItem(BlockList.compress_dry_diamond_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.compress_dry_diamond_block.getRegistryName()),
+                        //干钻石剑
+                        ItemList.dry_diamond_sword = new SwordItem(SwordMaterial.DRYDIAMOND,2,-2.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("dry_diamond_sword")),
                         //钻石楼梯
                         ItemList.diamond_stairs = new BlockItem(BlockList.diamond_stairs, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.diamond_stairs.getRegistryName()),
                         //钻石台阶

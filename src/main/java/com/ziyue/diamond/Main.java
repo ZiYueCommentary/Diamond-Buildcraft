@@ -2,19 +2,16 @@ package com.ziyue.diamond;
 
 import com.ziyue.diamond.lists.BlockList;
 import com.ziyue.diamond.lists.PaintingList;
-import com.ziyue.diamond.objects.blocks.DryDiamondDoor;
 import com.ziyue.diamond.world.biome.DiamondLandType;
 import com.ziyue.diamond.world.gen.DryDiamondOreGen;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.world.World;
 import net.minecraft.world.WorldType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -74,7 +71,7 @@ public class Main
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
-        InterModComms.sendTo("diamonds", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
+        LOGGER.info("Hello from Diamond Buildcraft!");
     }
 
     private void processIMC(final InterModProcessEvent event)
