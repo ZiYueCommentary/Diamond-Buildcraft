@@ -43,7 +43,7 @@ public class ModBlocks {
     //钻石按钮
     public static final Block DIAMOND_BUTTON = new DiamondButton("diamond_button");
     //钻石墙
-    public static final WallBase DIAMOND_WALL = new WallBase("diamond_wall", Material.IRON, 5.0F, 6.0F, SoundType.METAL, 1);
+    //public static final WallBase DIAMOND_WALL = new WallBase("diamond_wall", Material.IRON, 5.0F, 6.0F, SoundType.METAL, 1);
     //干钻石楼梯
     public static final Block DRY_DIAMOND_STAIRS = new BlockStairBase("dry_diamond_stairs", Blocks.DIAMOND_BLOCK.getDefaultState(), CreativeTabs.BUILDING_BLOCKS, 4.0F, 6.0F, 0, SoundType.METAL);
     //干钻石按钮
