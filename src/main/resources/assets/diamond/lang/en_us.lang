@@ -12,6 +12,7 @@ tile.compress_dry_diamond_block.name=Compress Dry Diamond Block
 tile.dry_diamond_door.name=Dry Diamond Door
 tile.dry_diamond_ladder.name=Dry Diamond Ladder
 tile.dry_diamond_fence_gate.name=Dry Diamond Fence Gate
+item.dry_diamond_sword.name=Dry Diamond Sword
 #Armor
 item.dry_diamond_helmet.name=Dry Diamond Helmet
 item.dry_diamond_chestplate.name=Dry Diamond Chestplate

@@ -25,9 +25,9 @@ public class ModBlocks {
     //原版钻石矿
     public static final Block DIAMOND_ORE_VANILA = new DiamondOre("minecraft:diamond_ore", Material.IRON).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     //完整钻石台阶
-    public static final BlockSlab DIAMOND_SLAB_DOUBLE = new BlockDoubleSlabBaseLight("diamond_slab_double", Material.IRON, CreativeTabs.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB_HALF);
+    public static final BlockSlab DIAMOND_SLAB_DOUBLE = new BlockDoubleSlabBase("diamond_slab_double", Material.IRON, CreativeTabs.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB_HALF, 1);
     //半个钻石台阶
-    public static final BlockSlab DIAMOND_SLAB_HALF = new BlockHalfSlabBaseLight("diamond_slab_half", Material.IRON, CreativeTabs.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB_HALF, ModBlocks.DIAMOND_SLAB_DOUBLE);
+    public static final BlockSlab DIAMOND_SLAB_HALF = new BlockHalfSlabBase("diamond_slab_half", Material.IRON, CreativeTabs.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB_HALF, ModBlocks.DIAMOND_SLAB_DOUBLE, 1);
     //完整干钻石台阶
     public static final BlockSlab DRY_DIAMOND_SLAB_DOUBLE = new BlockDoubleSlabBase("dry_diamond_slab_double", Material.IRON, CreativeTabs.BUILDING_BLOCKS, ModBlocks.DRY_DIAMOND_SLAB_HALF);
     //半个干钻石台阶
@@ -42,6 +42,8 @@ public class ModBlocks {
     public static final Block DIAMOND_PRESSURE_PLATE = new DiamondPressurePlate("diamond_pressure_plate");
     //钻石按钮
     public static final Block DIAMOND_BUTTON = new DiamondButton("diamond_button");
+    //钻石墙
+    public static final WallBase DIAMOND_WALL = new WallBase("diamond_wall", Material.IRON, 5.0F, 6.0F, SoundType.METAL, 1);
     //干钻石楼梯
     public static final Block DRY_DIAMOND_STAIRS = new BlockStairBase("dry_diamond_stairs", Blocks.DIAMOND_BLOCK.getDefaultState(), CreativeTabs.BUILDING_BLOCKS, 4.0F, 6.0F, 0, SoundType.METAL);
     //干钻石按钮
@@ -74,12 +76,9 @@ public class ModBlocks {
                               子悦用了一个小时得到的教训
 */
 /*
-    因为钻石台阶会发光，所以钻石台阶所使用的文件与干钻石台阶不一致
-    钻石台阶使用BlockDoubleSlabBaseLight和BlockHalfSlabBaseLight，文件内设置了亮度
-    干钻石台阶使用BlockDoubleSlabBase和BlockHalfSlabBase，没有设置亮度
-    但这两种文件都继承BlockSlabBase
-    因为每个方块都需要爆炸抗性和硬度，所以这两种文件内都设置了爆炸抗性、硬度和开采等级
-    如果你需要一个与这些数值不符的台阶，你需要自己复制文件并设置
+    新的模组版本加了优化，可以选择性设置亮度
+    使用BlockDoubleSlabBase和BlockHalfSlabBase注册，而不是分成多种情况
+    （话说我之前是怎么说出来要把多重情况注册多个类这种话的）
 */
 /*
     楼梯部分做了优化，因此你可以在这个文件中设置硬度、爆炸抗性、亮度和声音类型
@@ -88,4 +87,8 @@ public class ModBlocks {
 */
 /*
     栅栏、压力板和按钮的设置都在com.ziyue.diamond.objects.blocks里
+*/
+/*
+    没正式学java之前写的模组真的好乱...
+    一定要学java啊！一定！！！！
 */

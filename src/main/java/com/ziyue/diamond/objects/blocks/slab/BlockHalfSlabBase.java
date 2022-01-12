@@ -17,13 +17,24 @@ import java.util.Random;
 
 public class BlockHalfSlabBase extends BlockSlabBase
 {
-    public BlockHalfSlabBase(String name, Material material, CreativeTabs tab, BlockSlab half, BlockSlab doubleSlab)
+    public BlockHalfSlabBase(String name, Material material, CreativeTabs tab, BlockSlab half, BlockSlab doubleSlab) //无亮度情况
     {
         super(name, material, half);
         setCreativeTab(tab);
         ModItems.ITEMS.add(new ItemSlab(this, this, doubleSlab).setRegistryName(name));
         setHardness(4.0F);
         setResistance(5.0F);
+        setSoundType(SoundType.METAL);
+        setHarvestLevel("pickaxe", 2);
+    }
+    public BlockHalfSlabBase(String name, Material material, CreativeTabs tab, BlockSlab half, BlockSlab doubleSlab, float lightValue) //有亮度情况
+    {
+        super(name, material, half);
+        setCreativeTab(tab);
+        ModItems.ITEMS.add(new ItemSlab(this, this, doubleSlab).setRegistryName(name));
+        setLightLevel(lightValue);
+        setHardness(5.0F);
+        setResistance(6.0F);
         setSoundType(SoundType.METAL);
         setHarvestLevel("pickaxe", 2);
     }

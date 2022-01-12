@@ -4,12 +4,11 @@ import com.ziyue.diamond.Diamond;
 import com.ziyue.diamond.init.ModItems;
 import com.ziyue.diamond.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemSword;
 
-public class ArmorBase extends ItemArmor implements IHasModel {
-    public ArmorBase(String name, ArmorMaterial material, int renderIndexIn, EntityEquipmentSlot equipmentSlot){
-        super(material, renderIndexIn, equipmentSlot);
+public class SwordBase extends ItemSword implements IHasModel {
+    public SwordBase(String name, ToolMaterial material){
+        super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(CreativeTabs.COMBAT);

@@ -34,13 +34,13 @@ public class SmeltingRecipes {
         GameRegistry.addSmelting(new ItemStack(ModBlocks.DIAMOND_DOOR), new ItemStack(ModBlocks.DRY_DIAMOND_DOOR), 0.4F);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.DIAMOND_LADDER), new ItemStack(ModBlocks.DRY_DIAMOND_LADDER), 0.4F);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.DIAMOND_FENCE_GATE), new ItemStack(ModBlocks.DRY_DIAMOND_FENCE_GATE), 0.4F);
+        GameRegistry.addSmelting(new ItemStack(Items.DIAMOND_SWORD), new ItemStack(ModItems.DRY_DIAMOND_SWORD), 0.4F);
 
         /*装备*/
         GameRegistry.addSmelting(new ItemStack(Items.DIAMOND_HELMET), new ItemStack(ModItems.DRY_DIAMOND_HELMET), 0.4F);
         GameRegistry.addSmelting(new ItemStack(Items.DIAMOND_CHESTPLATE), new ItemStack(ModItems.DRY_DIAMOND_CHESTPLATE), 0.4F);
         GameRegistry.addSmelting(new ItemStack(Items.DIAMOND_LEGGINGS), new ItemStack(ModItems.DRY_DIAMOND_LEGGINGS), 0.4F);
         GameRegistry.addSmelting(new ItemStack(Items.DIAMOND_BOOTS), new ItemStack(ModItems.DRY_DIAMOND_BOOTS), 0.4F);
-
         //ItemStack里面方块后加上 , 3 代表amount为3，也就是数量
     }
 }

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "x",
+    "x",
+    "#"
+  ],
+
+  "key":
+  {
+    "x":
+    {
+      "item": "diamond:dry_diamond"
+    },
+    "#":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item":  "diamond:dry_diamond_stick",
+    "count": 4
+  }
+}

@@ -5,9 +5,7 @@ import com.ziyue.diamond.init.ModBlocks;
 import com.ziyue.diamond.init.ModItems;
 import com.ziyue.diamond.util.IHasModel;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockDropper;
 import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 

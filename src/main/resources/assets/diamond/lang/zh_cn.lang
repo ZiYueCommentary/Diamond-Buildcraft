@@ -12,6 +12,7 @@ tile.compress_dry_diamond_block.name=压缩干钻石块
 tile.dry_diamond_door.name=干钻石门
 tile.dry_diamond_ladder.name=干钻石梯子
 tile.dry_diamond_fence_gate.name=干钻石栅栏门
+item.dry_diamond_sword.name=干钻石剑
 # 装备
 item.dry_diamond_helmet.name=干钻石头盔
 item.dry_diamond_chestplate.name=干钻石胸甲
